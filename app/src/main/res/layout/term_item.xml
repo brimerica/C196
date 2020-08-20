@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="16dp"
+    tools:context=".TermActivity"
+    android:backgroundTint="@color/cardview_shadow_start_color">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/edit_term_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_edit_black"/>
+
+        <TextView
+            android:id="@+id/term_view_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4sp"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/term_view_title"
+            android:text="Term Dates" />
+
+        <TextView
+            android:id="@+id/term_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="27sp"
+            android:maxLines="1"
+            android:layout_toRightOf="@id/edit_term_btn"
+            android:ellipsize="end" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddEditTermActivity">
+
+    <EditText
+        android:id="@+id/add_term_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Term Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/add_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:hint="Start Date"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/add_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:hint="End Date"
+        android:inputType="text" />
+
+</LinearLayout>

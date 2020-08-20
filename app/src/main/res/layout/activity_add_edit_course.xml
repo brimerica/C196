@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddEditCourseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_course_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Course Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/add_course_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:hint="Start Date"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/add_course_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:hint="End Date"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/add_course_status"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_margin="8dp"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/add_course_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="40sp"
+            android:minLines="4"
+            android:hint="Add optional note here"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
